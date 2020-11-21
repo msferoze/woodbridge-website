@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Woodbridge Med Walk-In Clinic</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Woodbridge Med Walk-in Clinic</h1>
+            <nav>
+                <ul>
+                    <!-- <li><a href="index.html">Home</a></li> -->
+                    <li><a href="#resources">Patient Resources</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- SHowcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Healthcare without Hassle</h1>
+                <p>Walk-In Clinic | Family Practice</p>
+                <p>Most services covered by OHIP</p>
+                <!-- <a href="#" class="btn btn-outline">Read More</a> -->
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Submit a Question</h2>
+                <form name="contactform" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contactform">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field"/></label>
+                    </p>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="contact" placeholder="Phone Number" required>
+                    </div>
+                    <!-- <div class="form-control">
+                        <input type="text" name="email" placeholder="Email" required>
+                    </div> -->
+                    <div class="form-control">
+                        <input type="text" name="question" placeholder="Question" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="contact">
+        <div class="container">
+            <h1 class="stats-heading text-center my-1">Hours of Operation</h1>
+            <h4 class="stats-heading text-center py-2">
+                Sun     10AM - 12PM <br>
+                Mon     10AM -  2PM <br>
+                Tue     10AM -  2PM <br>
+                Wed     10AM -  2PM <br>
+                Thu     10AM -  2PM <br>
+                Fri     10AM -  2PM <br>
+                Sat     10AM -  2PM <br>
+            </h3>
+
+            <div class="grid grid-2 text-center my-4">
+                <div>
+                    <i class="fas fa-phone fa-3x"></i>
+                    <h3>905-553-0393</h3>
+                    <!-- <p class="text-secondary">call</p> -->
+                </div>
+                <div>
+                    <i class="fas fa-fax fa-3x"></i>
+                    <h3>905-266-1056</h3>
+                    <!-- <p class="text-secondary">Published</p> -->
+                </div>
+                <!-- <div>
+                    <i class="fas fa-envelope-open fa-3x"></i>
+                    <h3>woodbridgewalkinclinic@gmail.com</h3>
+                    <!-- <p class="text-secondary">Projects</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cli -->
+    <section class="cli" id="resources">
+        <div class="container grid">
+            <div class="iframe-container">
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=13z1xAJ_j8YbBm7JwOz-_rQttXBVxScHA&hl=en" width="640" height="480"></iframe>
+            </div>
+                <!-- <img src="images/stetho.jpg" alt=""> -->
+            <div class="card">
+                <h3>Virtual appointments available 7 days of the week</h3>
+            </div>
+            <div class="card">
+                <h3>Laboratory services available on Saturdays</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-2 py-2" id="about">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Call or Visit | No Referral Required</h2>
+                <p class="lead my-1">Serving people who need medical care for minor illnesses and injuries</p>
+                <p class="lead my-1">Also accepting new patients</p>
+                <!-- <a href="#" class="btn btn-dark">Read More</a>     -->
+            </div>
+            <img src="images/logos/016-doctor.svg" alt="">
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="languages" id="services">
+        <h2 class="md text-center my-2">
+            Services
+        </h2>
+        <div class="container flex">
+            <div class="card">
+                <h4>Prescription</h4>
+                <img src="images/logos/prescription.svg" alt="">
+            </div>
+            <div class="card">
+                <h4>Vaccine & Flu-Shot</h4>
+                <img src="images/logos/vaccine.svg" alt="">
+            </div>
+            <div class="card">
+                <h4>Blood Collection</h4>
+                <img src="images/logos/blood.svg" alt="">
+            </div>
+            <div class="card">
+                <h4>On-Site Lab</h4>
+                <img src="images/logos/lab.svg" alt="">
+            </div>
+            <div class="card">
+                <h4>Medical Report</h4>
+                <img src="images/logos/report.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Woobridge Med Walk-In Clinic
+                </h1>
+                <p>9200 Weston Rd, Unit 24 <br>
+                    Woodbridge, ON <br>
+                    L4H 2P8
+                </p>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/pages/category/Medical---Health/Woodbridge-med-walk-in-clinic-103058881170323/"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.google.com/maps/dir//Woodbridge+Med+Walk-in+clinic,+9200+Weston+Rd+unit%23+24,+Woodbridge,+ON+L4H+2P8/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b2f3929431a7f:0x7ebca93b988b932f?sa=X&ved=0ahUKEwiFqpvag5TtAhXMGVkFHRpwDP0Q48ADCFswAQ"><i class="fa fa-map-marker fa-2x"></i></a>                
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
