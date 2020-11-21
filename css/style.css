@@ -237,6 +237,10 @@ img {
     margin: 0 10px;
 }
 
+.footer .grid .credit {
+    font-size: xx-small;
+}
+
 /* Animations */
 
 @keyframes slideInFromLeft {
